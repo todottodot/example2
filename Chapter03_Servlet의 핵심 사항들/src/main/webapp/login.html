@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+ #loginFormArea{
+ 	text-align: center;
+ 	width: 250px;
+ 	margin: auto;
+ 	border: 1px solid red;
+ }
+ 
+ h1{
+ 	text-align: center;
+ }
+</style>
+
+<body>
+<h1>로그인</h1>
+<section id="loginFormArea">
+	<form action="login" method="get"> <!-- action= 매핑명  -->
+	<label id = "id">아이디:</label> &nbsp;&nbsp;&nbsp;
+	<input type="text" name="id" id = "id"/>
+	<br>
+	
+	<label id = "passwd">비밀번호 : </label> 
+	<input type="password" name="passwd" id = "passwd" size="21" />
+	<br><br>
+	<input type="submit" value="로그인"/>
+	</form>
+	
+	<hr/>
+	
+	<h1>2페이지 목록 요청하기(Get 방식)</h1>
+	<a href="boardList?page=2">2page</a>
+</section>
+</body>
+
+</html>
